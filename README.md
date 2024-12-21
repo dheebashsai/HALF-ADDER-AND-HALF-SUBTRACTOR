@@ -66,14 +66,42 @@ Y= A⊕B
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by: RegisterNumber: 
- 
-**Logic symbol & Truthtable**
+ Developed by:Dheebash Sai R
+ RegisterNumber: 24900100
 
-**RTL realization Output:** 
+```
+*HALF ADDER*
+module exp3(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum = a ^ b ;
+assign carry= a & b ;
+endmodule
+
+*HALF SUBTRACTOR*
+module exp3(a,b,D,Bo);
+input a,b;
+output B,Do;
+assign D = a ^ b ;
+assign Bo = ~a & b ;
+endmodule 
+```
 
 **RTL**
 
-**Result:**
+![image](https://github.com/user-attachments/assets/1da8a15e-5777-449e-924b-cea31e9f0c5f)
+![image](https://github.com/user-attachments/assets/7efe1e9a-35c4-4c6a-94ba-2e8c7c744383)
+
+**OUTPUT TIMING WAVEFORM**
+HALF ADDER
+![image](https://github.com/user-attachments/assets/71591dab-9d0d-40ac-935b-79c5e505a35b)
+HALF SUBTRACTOR
+![image](https://github.com/user-attachments/assets/5c884de5-2ac8-4e74-a279-54926229a7b3)
+
+**TRUTH TABLES**
+![image](https://github.com/user-attachments/assets/1c8bd8f1-81af-4574-8f68-15b6c48a16d4)
+
+Result:
+Thus the Half Adder and Half Subtractor circuits are designed and the truth tables are verified using Quartus Software
 
 
