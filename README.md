@@ -70,38 +70,33 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
  RegisterNumber: 24900100
 
 ```
-*HALF ADDER*
-module exp3(a,b,sum,carry);
+module exp1(a,b,c,d,e,f,g,h);
 input a,b;
-output sum,carry;
-assign sum = a ^ b ;
-assign carry= a & b ;
-endmodule
-
-*HALF SUBTRACTOR*
-module exp3(a,b,D,Bo);
-input a,b;
-output B,Do;
-assign D = a ^ b ;
-assign Bo = ~a & b ;
-endmodule 
+output c,d,e,f,g,h;
+assign c = a & b;
+assign d = a | b;
+assign e = a ^ b;
+assign f = ~(a & b);
+assign g = ~(a | b);
+assign h = ~(a ^ b);
 ```
 
 **RTL**
 
-![image](https://github.com/user-attachments/assets/1da8a15e-5777-449e-924b-cea31e9f0c5f)
-![image](https://github.com/user-attachments/assets/7efe1e9a-35c4-4c6a-94ba-2e8c7c744383)
+![image](https://github.com/user-attachments/assets/19c63756-0f0b-4010-a97d-ebe62515a37f)
+
 
 **OUTPUT TIMING WAVEFORM**
-HALF ADDER
-![image](https://github.com/user-attachments/assets/71591dab-9d0d-40ac-935b-79c5e505a35b)
-HALF SUBTRACTOR
-![image](https://github.com/user-attachments/assets/5c884de5-2ac8-4e74-a279-54926229a7b3)
+
+![image](https://github.com/user-attachments/assets/a1c07a78-1583-4062-893d-d7272a824e2d)
+
 
 **TRUTH TABLES**
-![image](https://github.com/user-attachments/assets/1c8bd8f1-81af-4574-8f68-15b6c48a16d4)
+
+![image](https://github.com/user-attachments/assets/7767c23f-457c-427a-9c05-be459570b4de)
+
 
 Result:
-Thus the Half Adder and Half Subtractor circuits are designed and the truth tables are verified using Quartus Software
+Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
 
 
